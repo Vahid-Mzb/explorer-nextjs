@@ -137,21 +137,6 @@ function Click() {
                           </section>
                         </td>
                       </tr>
-                      <tr
-                        className={`${styles.latestResults_body_tr_trans} ${
-                          0 == 0 - 1 ? styles.lastTd : ""
-                        }`}
-                        key={1025}
-                      >
-                        <td className={styles.tdBlock}>
-                          <section>Transaction hashes:</section>
-                          {data.transaction_hashes.map((hash, i) => (
-                            <section className={styles.blueText}>
-                              #{i + 1}:{hash}
-                            </section>
-                          ))}
-                        </td>
-                      </tr>
                     </>
                   );
                 })}
