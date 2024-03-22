@@ -50,7 +50,7 @@ export default function HeroSection() {
     const getLatest = async () => {
       try {
         const response = await axios.get(
-          `https://namadarpc.nodeworld.xyz/status?`
+          `https://rpc-namada.kintsugi-nodes.com/status?`
         );
         setChain(response.data.result.node_info.network);
         setHeight(response.data.result.sync_info.latest_block_height);
@@ -67,7 +67,7 @@ export default function HeroSection() {
     const getTotalValidators = async () => {
       try {
         const response = await axios.get(
-          `https://namadarpc.nodeworld.xyz/validators`
+          `https://namada-se100-rpc.gatadao.com/validators`
         );
         setValidators(response.data.result.total);
       } catch (error) {
